@@ -18,9 +18,10 @@
 
   <%= yield %>
 
-  <% if admin_signed_in? %>
-  <p><%= link_to "ログアウト", destroy_admin_session_path, method: :delete %></p>
-    <%= link_to '管理者用ページ', managements_path %>
-<% end %>
+
   </body>
+  <% if admin_signed_in? %>
+  <p><%= link_to "sign out", destroy_admin_session_path, method: :delete %></p>
+    <p><%= link_to 'leader only', managements_path %></p>
+<% end %>
 </html>

@@ -13,7 +13,9 @@
  *= require_tree .
  *= require_self
  */
-h1 {
-  color: red;
-  border: 1px solid #ccc;
+body {
+        font-size: 1rem;
+        background-color: #fff4b5;
+        padding: 20px;
+        text-align: center;
 }

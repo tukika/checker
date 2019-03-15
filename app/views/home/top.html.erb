@@ -1,20 +1,28 @@
-<h1>Home</h1>
-  <table>
-  <thead>
+<h1>Team Fake </h1>
+  <table align="center">
+     <h2><%= @d %></h2>
+
       <% @admins.each do |admin| %>
-
-          <tr><%= admin.name %></tr>
-          <th><%= admin.place %></th>
-
+      <tr>
+          <th><%= admin.name %></th>
+            <td><%= admin.place %></td>
+            </tr>
       <% end %>
-      <td>
-        <%= link_to 'office' ,office_path  %>
-        <%= link_to 'remote', remote_path  %>
-        <%= link_to 'mtg', mtg_path   %>
-        <%= link_to 'holiday', holiday_path   %>
-        <%= link_to 'home', home_path   %>
-      </td>
-
-  </thead>
-
-  </table>
+      </table>
+      <div class="main-wrapper">
+        <%= link_to office_path do %>
+          <i class="material-icons">office</i>
+        <% end %>
+        <%= link_to remote_path do  %>
+        <i class="material-icons">remote</i>
+        <% end %>
+        <%= link_to mtg_path do  %>
+        <i class="material-icons">mtg</i>
+          <% end %>
+        <%= link_to holiday_path do  %>
+        <i class="material-icons">holiday</i>
+          <% end %>
+        <%= link_to home_path do  %>
+        <i class="material-icons">home</i>
+          <% end %>
+      </div>

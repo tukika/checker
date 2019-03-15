@@ -3,7 +3,7 @@ class HomeController < ApplicationController
     after_action :save, only: [:office,:remote,:mtg,:holiday,:home]
   def top
     @admins = Admin.all
-
+    @d = Date.current
   end
 
   def office
