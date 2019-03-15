@@ -36,26 +36,6 @@ th:before {
   margin-right: 8px;
 }
 
-
-th2 {
-  font-weight: 300;
-  font-size: 20px;
-  color: black;/*文字色*/
-  padding: 0.5em;/*文字周りの余白*/
-
-  line-height: 1.9;/*行高*/
-  background: #c0c0c0;/*背景色*/
-  vertical-align: middle;/*上下中央*/
-
-}
-
-th2:before {
-  content: '●';
-  color: white;
-  margin-right: 8px;
-}
-
-
 td {
     font-style: italic;
     font-weight: 100;
@@ -79,7 +59,6 @@ i.material-icons {
     font-style: italic;
     line-height: 4.0;
     font-size: 0.5rem;
-
     position: relative;
     border-radius: 50%;
     margin: 3px;
@@ -111,7 +90,7 @@ i.material-icons:nth-of-type(4) {
 }
 
 i.material-icons:nth-of-type(4):hover {
-        color: #cdb274;
+        color: #88b999;
 }
 
 i.material-icons:nth-of-type(4):after {
@@ -167,15 +146,15 @@ i.material-icons:nth-of-type(8):after {
 }
 
 i.material-icons:nth-of-type(1) {
-        background-color: #ec9f83;
+        background-color: #cd8484;
 }
 
 i.material-icons:nth-of-type(1):hover {
-        color: #ec9f83;
+        color: #cd8484;
 }
 
 i.material-icons:nth-of-type(1):after {
-        border-color: #ec9f83;
+        border-color: #cd8484;
 }
 
 i.material-icons:nth-of-type(2) {
@@ -215,7 +194,7 @@ p {
         margin-top: 20px;
 }
 
-@media (min-width:1060px) {
+@media (min-width:1050px) {
     i.material-icons {
         padding:19px;
         margin:5px;
@@ -225,7 +204,7 @@ p {
 
 @media (min-width:3993px) {
     i.material-icons {
-        padding:23px;
+        padding:20px;
         margin:10px;
         font-size:4rem;
     }
