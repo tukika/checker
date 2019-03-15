@@ -1,0 +1,20 @@
+<h1>Home</h1>
+  <table>
+  <thead>
+      <% @admins.each do |admin| %>
+
+          <tr><%= admin.name %></tr>
+          <th><%= admin.place %></th>
+
+      <% end %>
+      <td>
+        <%= link_to 'office' ,office_path  %>
+        <%= link_to 'remote', remote_path  %>
+        <%= link_to 'mtg', mtg_path   %>
+        <%= link_to 'holiday', holiday_path   %>
+        <%= link_to 'home', home_path   %>
+      </td>
+
+  </thead>
+
+  </table>

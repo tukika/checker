@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<% if notice %>
+  <p class="notice"><%= notice %></p>
+
+<% end %>
+<html>
+  <head>
+    <title>Checker</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+
+  <%= yield %>
+
+  <% if admin_signed_in? %>
+  <p><%= link_to "ログアウト", destroy_admin_session_path, method: :delete %></p>
+    <%= link_to '管理者用ページ', managements_path %>
+<% end %>
+  </body>
+</html>

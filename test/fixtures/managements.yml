@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  member: MyString
+  admin: false
+
+two:
+  member: MyString
+  admin: false
